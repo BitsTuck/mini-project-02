@@ -23,23 +23,27 @@ h1 {
     font-size: 32px;
 }
 
-p {
+#description {
     font-size: 14px;
     text-align:center;
+    margin: 0 60px 30px 60px;
 }
 
 .grid {
-    display:grid;
-    width:100%;
     grid-template-columns: repeat(3, 1fr);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:space-around;
 }
 
 .card {
     border-style:dashed;
     border-color: white;
     margin: 15px;
-    height: 300px;
-    width: 350px;  
+    height: 450px;
+    width: 350px;
 }
 
 .card h2 {
@@ -100,3 +104,11 @@ p {
 footer {
     text-align: center;
 }
+
+
+@media screen and (min-width: 992px) {
+    .card {
+        width:30%;
+    }
+  }
+
